@@ -24,10 +24,10 @@ namespace SobotaZajecia12
             lista3.Add("kota2");
             string wypisz2 = Scal(lista3);
             Console.WriteLine(wypisz2);
-            Console.ReadKey();
 
 
-            return;
+
+
             var lista = new List<int>();
             //Dodawanie do kolekcji
             lista.Add(4);
@@ -53,10 +53,16 @@ namespace SobotaZajecia12
                 suma += aktualnyObiekt;
             }
             //PrezentacjaWyniku
-            Console.WriteLine("Suma: "+suma.ToString());
+            PrezentacjaWyniku(suma);
             Console.ReadKey();
 
         }
+
+        static void PrezentacjaWyniku(int suma)
+        {
+            Console.WriteLine("Suma: " + suma.ToString());
+        }
+
 
         static string Scal(List<string> lista)
         {
